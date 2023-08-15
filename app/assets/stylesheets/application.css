@@ -32,4 +32,20 @@ body,
   height: 100%;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #ff6a6a;
+  border: 2px solid #ff6a6a;
+  cursor: pointer;
+  border-radius: 0.30rem;
+  transition: 0.2s all ease-in-out;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: transparent;
 }
