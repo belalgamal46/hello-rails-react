@@ -9,8 +9,12 @@ const GreetingMessage = () => {
   const greeting = message.greeting_message
 
   useEffect(() => {
-    dispatch(fetchRandomMessage());
+    handleClick()
   }, []);
+
+  const handleClick = () => {
+    dispatch(fetchRandomMessage());
+  }
 
 
   if (isLoading) {
@@ -24,6 +28,7 @@ const GreetingMessage = () => {
   return (
     <div className="container">
       <h1>{greeting}</h1>
+      <button type="button" onClick={handleClick}>ReGreet</button>
     </div>
   );
 }
