@@ -1,0 +1,2 @@
+module Api::GreetingMessageHelper
+end
