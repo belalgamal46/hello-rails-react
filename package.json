@@ -2,21 +2,32 @@
   "name": "app",
   "private": "true",
   "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.15.0",
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-csstree-validator": "^3.0.0",
-    "stylelint-scss": "^5.1.0"
+    "stylelint-scss": "^5.1.0",
+    "webpack": "^5.88.2"
   },
   "scripts": {
     "stylelint": "npx stylelint '**/*.{css,scss}'",
-    "stylelint-fix": "npx stylelint '**/*.{css,scss}' --fix"
+    "stylelint-fix": "npx stylelint '**/*.{css,scss}' --fix",
+    "start": "./bin/dev",
+    "build": "webpack --config webpack.config.js --watch",
+    "watch": "webpack --config webpack.config.js --watch --mode development"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
-    "babel-loader": "^9.1.3"
+    "babel-loader": "^9.1.3",
+    "webpack-cli": "^5.1.4"
   }
 }
